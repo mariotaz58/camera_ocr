@@ -152,6 +152,7 @@ public class SimpleAndroidOCRActivity extends Activity {
 	}
 
 	protected void onPhotoTaken() {
+		Log.v(TAG, "onPhotoTaken");
 		_taken = true;
 
 		BitmapFactory.Options options = new BitmapFactory.Options();
@@ -205,7 +206,6 @@ public class SimpleAndroidOCRActivity extends Activity {
 		}
 
 		// _image.setImageBitmap( bitmap );
-		
 		Log.v(TAG, "Before baseApi");
 
 		TessBaseAPI baseApi = new TessBaseAPI();
